@@ -1,0 +1,620 @@
+body {
+    font-family: 'Times New Roman', Times, serif, 'Courier New', Courier, monospace, cursive;
+    background-color: #181818;
+    color: #D8BFD8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: rgb(172, 148, 13);
+    color: #D8BFD8;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .logo {
+    text-decoration: none;
+    color: #D8BFD8;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 200px;
+    height: 70px;
+    margin-right: 10px;
+    z-index: 10;
+    position: relative;
+    top:20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: red;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  nav a:hover {
+    color: darkred;
+  }
+  
+  .nav-toggle {
+    display: none;
+    cursor: pointer;
+    margin-right: 2rem;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #D8BFD8;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    min-height: 400px;
+    background: url('img/court.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .hero-content {
+    text-align: center;
+    margin-left: 12%;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .animated-text {
+    animation: text-animation 2s linear infinite;
+  }
+  
+  @keyframes text-animation {
+    0% { color: white; }
+    50% { color: darkred; }
+    100% { color:  white; }
+  }
+  
+  .track-button {
+    background-color: red;
+    color: #D8BFD8;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .track-button:hover {
+    background-color: darkred;
+    transform: scale(1.1);
+  }
+  
+  /* Services Section */
+  .services {
+    background-color: #202020;
+    padding: 2rem;
+  }
+  
+  .services h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .service-card {
+    background-color: #303030;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    width: 25%;
+  }
+  
+  .service-card img {
+    width: 300px;
+    margin-bottom: 1rem;
+  }
+  .trust-text{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+  
+  /* About Section */
+  .about {
+    background-color: #303030;
+    padding: 2rem;
+    text-align: center;
+}
+.abt{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#abt{
+    width: 280px;
+    height: 300px;
+}
+.about-us{
+    padding-top: 8%;
+    padding-left: 5%;
+}
+.about-us h2{
+    padding-top: 1%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+.about-us p{
+    text-align: center;
+}
+.about-us h3{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+.about h2 {
+    margin-bottom: 2rem;
+}
+
+.about p {
+    margin-bottom: 2rem;
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+/* Attorneys Page */
+.attorneys {
+    background-image: url('img/court.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    padding-top: 15%;
+}
+
+.attorneys h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkred;
+}
+
+.attorney-profiles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.attorney-profile {
+    background-color: #303030;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    width: 25%;
+}
+
+.attorney-profile img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.attorney-profile h3 {
+    margin-bottom: 0.5rem;
+}
+
+.attorney-profile h4 {
+    margin-bottom: 1rem;
+    color: #D8BFD8;
+}
+
+.attorney-profile p {
+    margin-bottom: 1rem;
+}
+
+.consultation-button {
+    background-color: red;
+    color: #D8BFD8;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.consultation-button:hover {
+    background-color: darkred;
+    transform: scale(1.1);
+}
+
+/* Contact Us Page */
+.contact-us {
+    background-color: #202020;
+    padding: 2rem;
+    text-align: center;
+    padding-top: 10%;
+}
+.contact-us h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 50px;
+}
+
+.contact-info {
+    margin-bottom: 2rem;
+    text-align: left;
+    text-align: center;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input{
+    width: 50%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #D8BFD8;
+    border-radius: 5px;
+}
+.contact-form textarea {
+    width: 50%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #D8BFD8;
+    border-radius: 5px;
+    margin-left: 14%;
+    height: 300px;
+}
+
+.animated-button {
+    background-color: red;
+    color: #D8BFD8;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 3;
+    position: relative;
+    top: 40px;
+    margin-bottom: 20px;
+    right: 320px;
+}
+
+.animated-button:hover {
+    background-color: darkred;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: rgb(172, 148, 13);
+    text-align: center;
+    padding: 1rem 0;
+    color: darkred;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.footer-links {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.footer-links h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: red;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: darkred;
+}
+
+.footer-social {
+    text-align: left;
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    display: block;
+}
+
+.footer-social li {
+    margin-right: 1rem;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: red;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: darkred;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: red;
+    color: #D8BFD8;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: darkred;
+    transform: scale(1.1);
+}
+
+.scroll-to-top svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Mobile Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(172, 148, 13);
+    color: red;
+    padding: 2rem;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 100;
+}
+
+.sidebar.show {
+    transform: translateX(0);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.sidebar li {
+    margin-bottom: 1rem;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: red;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: darkred;
+}
+
+/* Hamburger Menu Animation */
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #D8BFD8;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+    margin-left: 2%;
+}
+
+.nav-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.nav-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+    header{
+        width: 100vw;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+    .logo{
+        margin-left: 20%;
+    }
+
+    .hero-content {
+        margin-bottom: 2rem;
+        padding-top: 20%;
+    }
+    
+
+    .service-cards {
+        flex-direction: column;
+    }
+
+    .service-card {
+        width: 80%;
+    }
+    
+    .service-card img{
+        width: 80%;
+    }
+
+    .attorney-profiles {
+        flex-direction: column;
+    }
+
+    .attorney-profile {
+        width: 80%;
+    }
+    .attorneys{
+        padding-top: 40%;
+    }
+
+    .contact-info {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .contact-us {
+        padding-top: 30%;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        margin-bottom: 1rem;
+    }
+    #message{
+        margin-right: 13%;
+    }
+    
+.animated-button {
+    background-color: red;
+    color: #D8BFD8;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 3;
+    position: relative;
+    top: 40px;
+    margin-bottom: 20px;
+    right: 5px;
+}
+
+.about-us{
+    padding-top: 30%;
+    padding-left: 2%;
+    padding-left: 2%;
+}
+
+.abt{
+    font-size: 18px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#abt{
+    width: 358px;
+    height:300px;
+}
+
+}
+  
